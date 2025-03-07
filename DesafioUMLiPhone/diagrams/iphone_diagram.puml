@@ -1,0 +1,48 @@
+@startuml
+title Diagrama UML: Componentes do iPhone (Reprodutor Musical, Aparelho Telefônico, Navegador de Internet, Sistema Operacional)
+
+interface "Reprodutor Musical" as ReprodutorMusical {
+  +tocar(): void
+  +pausar(): void
+  +selecionarMusica(String musica): void
+}
+
+interface "Aparelho Telefônico" as AparelhoTelefonico {
+  +ligar(String numero): void
+  +atender(): void
+  +iniciarCorreioVoz(): void
+}
+
+interface "Navegador de Internet" as NavegadorInternet {
+  +exibirPagina(String url): void
+  +adicionarNovaAba(): void
+  +atualizarPagina(): void
+}
+
+interface "Sistema Operacional" as SistemaOperacional {
+  +ligar(): void
+  +desligar(): void
+  +reiniciar(): void
+}
+
+class iPhone {
+  +tocar(): void
+  +pausar(): void
+  +selecionarMusica(String musica): void
+  +ligar(String numero): void
+  +atender(): void
+  +iniciarCorreioVoz(): void
+  +exibirPagina(String url): void
+  +adicionarNovaAba(): void
+  +atualizarPagina(): void
+  +ligar(): void
+  +desligar(): void
+  +reiniciar(): void
+}
+
+ReprodutorMusical <|-- iPhone
+AparelhoTelefonico <|-- iPhone
+NavegadorInternet <|-- iPhone
+SistemaOperacional <|-- iPhone
+
+@enduml
