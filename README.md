@@ -13,7 +13,7 @@ As linguagens de programação utilizadas para implementar a modelagem são:
 
 Abaixo está o diagrama UML que modela as funcionalidades principais do iPhone:
 
-![Diagrama UML](https://github.com/user-attachments/assets/34a0a376-1ee4-4ebf-af7a-bdfd7960c7ae)
+![Image](https://github.com/user-attachments/assets/d809107d-f9fc-495f-bd04-20cbf0c2c12d)
 
 ## Código do Diagrama UML
 
